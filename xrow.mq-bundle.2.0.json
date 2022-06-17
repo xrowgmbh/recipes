@@ -9,10 +9,10 @@
                 },
                 "post-install-output": [
                     "  * Your xrow/mq-bundle is ready."
-                ]
-            },
-            "bundles": {
-                "Xrow\\MQBundle\\XrowMQBundle": ["all"]
+                ],
+                "bundles": {
+                    "Xrow\\MQBundle\\XrowMQBundle": ["all"]
+                }
             },
             "env": {
                 "RABBITMQ_HOST": "localhost",

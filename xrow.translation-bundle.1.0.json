@@ -9,10 +9,10 @@
                 },
                 "post-install-output": [
                     "  * Your xrow/translation-bundle is almost ready."
-                ]
-            },
-            "bundles": {
-                "Xrow\\TranslationBundle\\XrowTranslationBundle": ["all"]
+                ],
+                "bundles": {
+                    "Xrow\\TranslationBundle\\XrowTranslationBundle": ["all"]
+                }
             },
             "files": {
                 "config/packages/xrow_translation.yaml": {
