@@ -38,14 +38,6 @@
                         ""
                     ],
                     "executable": false
-                },
-                "config/routes/xrow_translation.yaml": {
-                    "contents": [
-                        "xrow_translation:",
-                        "    resource: '@XrowTranslationBundle/Resources/config/routing.yml'",
-                        ""
-                    ],
-                    "executable": false
                 }
             },
             "ref": "bbbb"
