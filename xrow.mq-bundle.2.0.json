@@ -12,13 +12,13 @@
                 ],
                 "bundles": {
                     "Xrow\\MQBundle\\XrowMQBundle": ["all"]
+                },
+                "env": {
+                    "RABBITMQ_HOST": "localhost",
+                    "RABBITMQ_SERVICE_PORT_AMQP": "5672",
+                    "RABBITMQ_USER": "rabbitmq",
+                    "RABBITMQ_PASSWORD": "rabbitmq"
                 }
-            },
-            "env": {
-                "RABBITMQ_HOST": "localhost",
-                "RABBITMQ_SERVICE_PORT_AMQP": "5672",
-                "RABBITMQ_USER": "rabbitmq",
-                "RABBITMQ_PASSWORD": "rabbitmq"
             },
             "files": {
                 "config/packages/xrow_mq.yaml": {
