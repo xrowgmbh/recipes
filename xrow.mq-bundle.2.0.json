@@ -1,0 +1,46 @@
+{
+    "manifests": {
+        "xrow/mq-bundle": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "assets/": "assets/",
+                    "config/": "%CONFIG_DIR%/",
+                    "templates/": "templates/"
+                },
+                "post-install-output": [
+                    "  * Your xrow/mq-bundle is ready."
+                ]
+            },
+            "bundles": {
+                "Xrow\\MQBundle\\XrowMQBundle": ["all"]
+            },
+            "env": {
+                "RABBITMQ_HOST": "localhost",
+                "RABBITMQ_SERVICE_PORT_AMQP": "5672",
+                "RABBITMQ_USER": "rabbitmq",
+                "RABBITMQ_PASSWORD": "rabbitmq"
+            },
+            "files": {
+                "config/packages/xrow_mq.yaml": {
+                    "contents": [
+                        "parameters:",
+                        "    rabbitmq_host: '%env(RABBITMQ_HOST)%'",
+                        "    rabbitmq_port: '%env(RABBITMQ_SERVICE_PORT_AMQP)%'",
+                        "    rabbitmq_user: '%env(RABBITMQ_USER)%'",
+                        "    rabbitmq_password: '%env(RABBITMQ_PASSWORD)%'",
+                        "",
+                        "xrow_mq:",
+                        "    server: '%rabbitmq_host%'",
+                        "    port: '%rabbitmq_port%'",
+                        "    user: '%rabbitmq_user%'",
+                        "    password: '%rabbitmq_password%'",
+                        "    qos: 1",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "bbbbb"
+        }
+    }
+}
