@@ -36,13 +36,10 @@
                     ],
                     "executable": false
                 },
-                "config/routes/api_platform_admin.yaml": {
+                "config/routes/xrow_translation.yaml": {
                     "contents": [
-                        "admin:",
-                        "    path: /admin",
-                        "    controller: Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController",
-                        "    defaults:",
-                        "        template: admin.html.twig",
+                        "xrow_translation:",
+                        "    resource: '@XrowTranslationBundle/Resources/config/routing.yml'",
                         ""
                     ],
                     "executable": false
