@@ -1,0 +1,42 @@
+{
+    "manifests": {
+        "xrow/newsletter-bundle": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "assets/": "assets/",
+                    "config/": "%CONFIG_DIR%/",
+                    "templates/": "templates/"
+                },
+                "post-install-output": [
+                    "  * Your xrow/newsletter-bundle is almost ready."
+                ],
+                "bundles": {
+                    "Xrow\\NewsletterBundle\\XrowNewsletterBundle": ["all"]
+                }
+            },
+            "files": {
+                "config/packages/xrow_newsletter.yaml": {
+                    "contents": [
+                        "xrow_newsletter:",
+                        "    adapter: newsletter.smtp",
+                        "    system:",
+                        "        default:",
+                        "            list_id: 12",
+                        "            site_name: 'My Channel'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/routes/xrow_newsletter.yaml": {
+                    "contents": [
+                        "xrow_newsletter:",
+                        "    resource: '@XrowNewsletterBundle/Resources/config/routing.yml'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "aaaa"
+        }
+    }
+}
