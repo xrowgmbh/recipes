@@ -5,6 +5,9 @@
         ],
         "xrow/mq-bundle": [
             "2.0"
+        ],
+        "xrow/newsletter-bundle": [
+            "4.0"
         ]
     },
     "branch": "main",
