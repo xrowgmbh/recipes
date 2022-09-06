@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "xrow/mq-bundle": {
+            "manifest": {
+                "copy-from-recipe": {
+                    "config/": "%CONFIG_DIR%/"
+                },
+                "post-install-output": [
+                    "  * Your xrow/healthcheck-bundle is ready."
+                ],
+                "bundles": {
+                    "Xrow\\HealtcheckBundle\\HealtcheckBundle": ["all"]
+                }
+            },
+            "files": {
+                "config/routes/xrow_healtcheck.yaml": {
+                    "contents": [
+                        "xrow_healtcheck:",
+                        "    resource: '@XrowHealtcheckBundle/Resources/config/routing.yml",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c359b35831046d45784993843db95f8f4b966637"
+        }
+    }
+}

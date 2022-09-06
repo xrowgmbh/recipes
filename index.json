@@ -3,6 +3,9 @@
         "xrow/translation-bundle": [
             "1.0"
         ],
+        "xrow/healthcheck-bundle": [
+            "1.0"
+        ],
         "xrow/mq-bundle": [
             "2.0"
         ],
