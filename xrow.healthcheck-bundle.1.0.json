@@ -9,14 +9,14 @@
                     "  * Your xrow/healthcheck-bundle is ready."
                 ],
                 "bundles": {
-                    "Xrow\\HealtcheckBundle\\HealtcheckBundle": ["all"]
+                    "Xrow\\Bundle\\HealtCheck\\XrowHealthCheckBundle": ["all"]
                 }
             },
             "files": {
-                "config/routes/xrow_healtcheck.yaml": {
+                "config/routes/xrow_healthcheck.yaml": {
                     "contents": [
-                        "xrow_healtcheck:",
-                        "    resource: '@XrowHealtcheckBundle/Resources/config/routing.yml",
+                        "xrow_healthcheck:",
+                        "    resource: '@XrowHealthCheckBundle/Resources/config/routing.yml",
                         ""
                     ],
                     "executable": false
