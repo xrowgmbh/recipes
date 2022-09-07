@@ -16,7 +16,7 @@
                 "config/routes/xrow_healthcheck.yaml": {
                     "contents": [
                         "xrow_healthcheck:",
-                        "    resource: '@XrowHealthCheckBundle/Resources/config/routing.yml",
+                        "    resource: '@XrowHealthCheckBundle/Resources/config/routing.yml'",
                         ""
                     ],
                     "executable": false
