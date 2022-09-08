@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "xrow/mq-bundle": {
+        "xrow/healthcheck-bundle": {
             "manifest": {
                 "copy-from-recipe": {
                     "config/": "%CONFIG_DIR%/"
