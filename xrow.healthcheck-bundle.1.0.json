@@ -9,7 +9,7 @@
                     "  * Your xrow/healthcheck-bundle is ready."
                 ],
                 "bundles": {
-                    "Xrow\\Bundle\\HealtCheck\\XrowHealthCheckBundle": ["all"]
+                    "Xrow\\Bundle\\HealthCheck\\XrowHealthCheckBundle": ["all"]
                 }
             },
             "files": {
